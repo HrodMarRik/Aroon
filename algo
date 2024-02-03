@@ -1,0 +1,29 @@
+Page inscription/connexion --> client
+
+OUVERTURE_BDD(client) --> dossier_BDD
+
+si etat avancement == None :
+
+	Création de dossier --> dossier_BDD(1,2,3)
+
+si etat avancement == Recherche :
+
+	INFO_LIEU(1) --> 4
+	RECHERCHE_APPARTEMENT(1,4) --> 5
+	RECHERCHE_INSTITU_CONCERNER --> 6 
+
+si etat avancement == Organisation
+	
+	RECHERCHE_DEMENAGEUR
+	RECHERCHE_DATE_PLUS_TOT
+	CRATION_DOSSIER_GOUV
+	VALIDATION_CLIENT
+
+si etat avancement == Pret
+
+	LANCEMENT_DOSSIER_GOUV
+	LANCEMENT_DEMENAGEMENT
+
+sinon :
+
+	erreur BDD/client
