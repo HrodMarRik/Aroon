@@ -80,6 +80,8 @@ si stade avancement == organisation(1,2,3,-4,-5,-6)
 si stade avancement == prêt("all")
     fonction() --> lancement
     fonction() --> mise à jour des fiche dossier
+
+    
 evolution possible :
 - orienté etudiant
 - orienté reconversion
@@ -100,3 +102,4 @@ revenue :
     formule client
     contrat exterieur 
     'pub ?'
+

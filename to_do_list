@@ -1,0 +1,19 @@
+format : 
+
+ACTION - QUI - TEMPS_MAX - description
+
+dans l'ordre : 
+
+PROTOTYPE APP - Ad/Ro - AVRIL/MAI - création du code de base sans GUI pour valider le fonctionnement
+
+PAGE WEB - Ad - JUIN - simple efficace pour recherche financement potentiel (dependant de la suite)
+
+ANALYSE DU MARCHÉ - Ro - Juin - etablissement des prix et de la pression concurenciel
+
+BUISNESS PLAN - Ad/Ro - Juillet - peremtteras une validation avant le lancement
+
+TEST/MAQUETTAGE - Ad/Ro - FIN Juillet/ Aout - beta pour les bug/prix
+
+AJUSTEMENT POST-TEST - Ad/Ro - Aout - debugage 
+
+LANCEMENT DEFINITIF - Ad/Ro - Septembre 2024 - lancement final 
