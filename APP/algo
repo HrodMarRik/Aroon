@@ -1,29 +1,71 @@
 Page inscription/connexion --> client
 
-OUVERTURE_BDD(client) --> dossier_BDD
 
-si etat avancement == None :
+main :
+	- verification d'inscription/connexion + IP
+	- lancement du fichier selon le support (phone/desktop)
 
-	Création de dossier --> dossier_BDD(1,2,3)
+	PHONE :
 
-si etat avancement == Recherche :
+		- language : ##?## (C# avec .NET)
 
-	INFO_LIEU(1) --> 4
-	RECHERCHE_APPARTEMENT(1,4) --> 5
-	RECHERCHE_INSTITU_CONCERNER --> 6 
+		OUVERTURE_BDD(client) --> dossier_BDD
 
-si etat avancement == Organisation
-	
-	RECHERCHE_DEMENAGEUR
-	RECHERCHE_DATE_PLUS_TOT
-	CRATION_DOSSIER_GOUV
-	VALIDATION_CLIENT
+		si etat avancement == None :
 
-si etat avancement == Pret
+			Création de dossier --> dossier_BDD(1,2,3)
 
-	LANCEMENT_DOSSIER_GOUV
-	LANCEMENT_DEMENAGEMENT
+		si etat avancement == Recherche :
 
-sinon :
+			INFO_LIEU(1) --> 4
+			RECHERCHE_APPARTEMENT(1,4) --> 5
+			RECHERCHE_INSTITU_CONCERNER --> 6 
 
-	erreur BDD/client
+		si etat avancement == Organisation
+			
+			RECHERCHE_DEMENAGEUR
+			RECHERCHE_DATE_PLUS_TOT
+			CRATION_DOSSIER_GOUV
+			VALIDATION_CLIENT
+
+		si etat avancement == Pret
+
+			LANCEMENT_DOSSIER_GOUV
+			LANCEMENT_DEMENAGEMENT
+
+		sinon :
+
+			erreur BDD/client
+
+	DESKTOP :
+
+		- language :: ##?## (C#)
+
+
+		OUVERTURE_BDD(client) --> dossier_BDD
+
+		si etat avancement == None :
+
+			Création de dossier --> dossier_BDD(1,2,3)
+
+		si etat avancement == Recherche :
+
+			INFO_LIEU(1) --> 4
+			RECHERCHE_APPARTEMENT(1,4) --> 5
+			RECHERCHE_INSTITU_CONCERNER --> 6 
+
+		si etat avancement == Organisation
+			
+			RECHERCHE_DEMENAGEUR
+			RECHERCHE_DATE_PLUS_TOT
+			CRATION_DOSSIER_GOUV
+			VALIDATION_CLIENT
+
+		si etat avancement == Pret
+
+			LANCEMENT_DOSSIER_GOUV
+			LANCEMENT_DEMENAGEMENT
+
+		sinon :
+
+			erreur BDD/client
