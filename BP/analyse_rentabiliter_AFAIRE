@@ -1,1 +1,30 @@
-nous prevoyons rien vue que j'ai pas encore les prix mais en vrai on sera rentable oklm
+Forfait 1 : Le client part simplement d'un point A à un point B et souhaite être accompagné pour la recherche d'appartement, l'organisation du déménagement, le déménagement lui-même, ainsi que la gestion administrative.
+
+Forfait 2 : Le client a déjà une idée d'appartement en tête, mais il souhaite de l'aide pour l'organisation du déménagement, la gestion administrative, etc.
+
+Forfait 3 : Le client a déjà tout organisé, mais il souhaite simplement être assisté pour le déménagement.
+
+
+Forfait 1 : Prix du secteur agence immobilier + prix fixe pour l'orga + prix secteur demenageur + prix fixe de la gestion administrative - 10%
+Forfait 2 : Prix fixe pour l'orga + prix secteur demenageur + prix fixe de la gestion administrative -5%
+Forfait 3 : Prix secteur demenageur + prix fixe de la gestion administrative 
+
+
+
+offres : 
+
+recherche appartement : 
+
+	- accord avec agence immobilière --> prix/vente 
+
+organisation pré-demenagement : 
+
+	- prix fixé sur le temps de travail humain + temps serveur.
+
+demenagement : 
+
+	- accord avec demenageur --> prix/vente
+
+administration :
+
+	- prix fixé sur le temps de travail humain + temps serveur. 
