@@ -1,105 +1,122 @@
 Projet Simplifié :
-l’appli :
-prendre en charge toute les procédure du déménagement
 
-interface avec une position de départ, et une position d'arrivée.
-lié à l'api de google map, pour les medecin et les contrainte demander par le client
-Établissement des devis pour l'audit et pour le déménagement.
-établir les dates "au plus tôt"
-Établir l'espace nécessaire pour le déménagement.
-gestion des organisme gouvernemental/financière/assurance/la poste/arrêt des charges/banque/médecin/animaux/.
-assurance déménagement
+    l’appli :
+        prendre en charge toute les procédure du déménagement
 
-mise en contact avec des organismes extérieurs pour ce faire dans de nouveaux lieux de vie.
-nécessaire :
+        - interface avec une position de départ, et une position d'arrivée.
+        - lié à l'api de google map, pour les medecin et les contrainte demander par le client
+        - Établissement des devis pour l'audit et pour le déménagement.
+        - établir les dates "au plus tôt"
+        - Établir l'espace nécessaire pour le déménagement.
+        - gestion des organisme gouvernemental/financière/assurance/la poste/arrêt des charges/banque/médecin/animaux/.
+        - assurance déménagement
 
-- site internet pour le faire savoir
-- des contact avec des collaborateur (déménageur, entreprise de prise en charge)
+        mise en contact avec des organismes extérieurs pour ce faire dans de nouveaux lieux de vie.
+    
+    nécessaire :
 
-plus value:
-tout doit se faire très vite
-avec le plus de variable possible
+        - site internet pour le faire savoir
+        - des contact avec des collaborateur (déménageur, entreprise de prise en charge)
+
+    plus value:
+        tout doit se faire très vite
+        avec le plus de variable possible
 
 
 Le Projet : 
-a créé :
-Page WEB :
-frontend d'info : 
-redirection vers l'app 
-charte graphique
-politique de confidentialité
-Monétisation ?
-APP (Mobile/Laptop) :
-interface :
-charte graphique
-responsive
-fonction backend :
-1 fonction/action automatiser
-warper pour BDD
-faciliter l'authentification
-serveur --> accessibilité :
-hébergement : cloud, PAas
-cybersecu :
-revue de code
-legal :
-banque
-création entreprise :
-noms, Logo,
-contact :
-déménageur
-API googlemap
-collaborateur potentiel
-chemin d'information :
-info client :
-    1. Adresse initiale/future
-    2. type de logement initial/future
-    3. pour combien de personnes/animaux
-    4. cherche : des écoles, collèges, lycées, travail, médecin ...
-    5. moyen de transport
-    6. banque
-    7. pôle d'assurance
-    8. budget
-    9. stade d'avancement (recherche,organisation,pret)
-info extérieur :
-    10. aide pour les déménagements
-    11. lieu en manque de personnel
-    12. contact collaborateur
-    13. zone faciliter en transport pour les personne sans permis
+    a créé :
+        Page WEB :
+            - redirection vers l'app 
+            - charte graphique
+            - politique de confidentialité
+            - Monétisation ?
 
-Timeline :
-prise des infos :
-Vérification de l’inscription
-si stade avancement == recherche(1,2,3)
-    fonction(1) --> 4
-    fonction(1,-4) --> 5
-    fonction(1) --> 6
-si stade avancement == organisation(1,2,3,-4,-5,-6)
-    fonction() --> 14. entreprise pour déménagement
-    fonction() --> 15. date de départ "au plus tôt"
-    fonction() --> 16. temps d'exercice
-si stade avancement == prêt("all")
-    fonction() --> lancement
-    fonction() --> mise à jour des fiche dossier
+        APP (Mobile/Laptop) :
 
-    
-evolution possible :
-- orienté etudiant
-- orienté reconversion
-- vers l'etranger
-- depuis l'etranger
-- début sans lieu d'arrivée 
+            Language : 
+                pour multiplatforme : C#, JS/TypeScript ou Dart. 
+                Laptop : HTML/CSS/JS, C#, Java,  C++ ou Python.
+                mobile : Swift, Kotline, Java, Dart ou Objective-C.
 
 
+            interface :
+                - charte graphique
+                - responsive
 
-analyse financier : 
+            fonction backend :
 
-cout :
-    serveur 
-    demenageur 
-    employer 
+                - 1 fonction/action automatiser
+                - warper pour BDD
+                - faciliter l'authentification
+                - serveur --> accessibilité :
+                - hébergement : cloud, PAas
+            
+            cybersecu :
+                - revue de code
+            
+            legal :
+                - banque
+                - création entreprise :
+                    -- noms, Logo,
+            
+            contact :
+                - déménageur
+                - API googlemap
+                - collaborateur potentiel
 
-revenue :
-    formule client
-    contrat exterieur 
-    'pub ?'
+        chemin d'information :
+
+            info client :
+                1. Adresse initiale/future
+                2. type de logement initial/future
+                3. pour combien de personnes/animaux
+                4. cherche : des écoles, collèges, lycées, travail, médecin ...
+                5. moyen de transport
+                6. banque
+                7. pôle d'assurance
+                8. budget
+                9. stade d'avancement (recherche,organisation,pret)
+            info extérieur :
+                10. aide pour les déménagements
+                11. lieu en manque de personnel
+                12. contact collaborateur
+                13. zone faciliter en transport pour les personne sans permis
+
+        Timeline :
+            prise des infos :
+                """
+                Vérification de l’inscription
+                si stade avancement == recherche(1,2,3)
+                    fonction(1) --> 4
+                    fonction(1,-4) --> 5
+                    fonction(1) --> 6
+                si stade avancement == organisation(1,2,3,-4,-5,-6)
+                    fonction() --> 14. entreprise pour déménagement
+                    fonction() --> 15. date de départ "au plus tôt"
+                    fonction() --> 16. temps d'exercice
+                si stade avancement == prêt("all")
+                    fonction() --> lancement
+                    fonction() --> mise à jour des fiche dossier
+                """
+            
+        evolution possible :
+            - orienté etudiant
+            - orienté reconversion
+            - vers l'etranger
+            - depuis l'etranger
+            - début sans lieu d'arrivée 
+
+
+
+        analyse financier : 
+
+            cout :
+                serveur 
+                demenageur 
+                employer 
+
+            revenue :
+                formule client
+                contrat exterieur 
+                'pub ?'
 
