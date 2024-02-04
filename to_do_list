@@ -17,3 +17,38 @@ TEST/MAQUETTAGE - Ad/Ro - FIN Juillet/ Aout - beta pour les bug/prix
 AJUSTEMENT POST-TEST - Ad/Ro - Aout - debugage 
 
 LANCEMENT DEFINITIF - Ad/Ro - Septembre 2024 - lancement final 
+
+
+
+POINT PAR POINT : 
+
+Prototype app :
+	- structure du BACKEND autonome 
+	- FRONT pour PHONE, DESKTOP. 
+	- gestion BDD. 
+
+PAGE WEB : 
+	- structure front proche de l'APP 
+	- lien BDD pour connexion (au debut ça serviras a rien)
+
+ANALYSE DU MARCHÉ :
+	- etude concurenciel 
+	- mise au point des tarifs 
+	- étude des potentiel évolution de la concurence --> etude des risques. 
+
+BP :
+	- doc propre pour potentiel demande de financement. 
+
+TEST/MAQUETAGE:
+	- recherche de client sur x/temps et test de réalisation. 
+	- test de cyber (revue de code, test des vulnerabiliter, test d'intrusion)
+
+AJUSTEMENT POST-TEST :
+	- mise a jour du code. 
+	- mise a jour tarification. 
+	- mise a jour des service proposer
+
+LANCEMENT DEFINITIF :
+	- ouverture de tout les serveurs.
+	- lancement marketing. 
+	- potentiel recrutement. 
