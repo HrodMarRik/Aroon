@@ -1,71 +1,62 @@
 Page inscription/connexion --> client
 
-
 main :
 	- verification d'inscription/connexion + IP
-	- lancement du fichier selon le support (phone/desktop)
+	- lancement du GUI selon le support (phone/desktop)
+	- lancement du BACK en parallèle 
 
-	PHONE :
 
-		- language : ##?## (C# avec .NET)
+GUI : 
 
-		OUVERTURE_BDD(client) --> dossier_BDD
+	PHONE : 
 
-		si etat avancement == None :
-
-			erreur(OUVERTURE_BDD)
-
-		si etat avancement == Recherche :
-
-			INFO_LIEU(1) --> 4
-			RECHERCHE_APPARTEMENT(1,4) --> 5
-			RECHERCHE_INSTITU_CONCERNER --> 6 
-
-		si etat avancement == Organisation
-			
-			RECHERCHE_DEMENAGEUR
-			RECHERCHE_DATE_PLUS_TOT
-			CRATION_DOSSIER_GOUV
-			VALIDATION_CLIENT
-
-		si etat avancement == Pret
-
-			LANCEMENT_DOSSIER_GOUV
-			LANCEMENT_DEMENAGEMENT
-
-		sinon :
-
-			erreur BDD/client
+		- Page par page sans division d'ecran
 
 	DESKTOP :
 
-		- language :: ##?## (C#)
+		- All in one division de l'écran + menu deroulant
+		- taille responsive
+		- FRONT avec zone ADMIN (gestion mail, gestion contact client, acces BDD, Ticket, Logs)
+
+BACK : 
+
+	OUVERTURE_BDD(client) --> dossier_BDD
+
+	si etat avancement == None :
+
+		erreur(OUVERTURE_BDD)
+
+	si etat avancement == Recherche :
+
+		INFO_LIEU(1) --> 4
+		RECHERCHE_APPARTEMENT(1,4) --> 5
+		RECHERCHE_INSTITU_CONCERNER --> 6 
+		MAJ_BDD
+		MAJ_AGENDA
+		CONTACT_CLIENT
+
+	si etat avancement == Organisation
+		
+		RECHERCHE_DEMENAGEUR
+		RECHERCHE_DATE_PLUS_TOT
+		CRATION_DOSSIER_GOUV
+		MAJ_AGENDA
+		VALIDATION_CLIENT --> SI PAS VALIDER RELANCE DES PROGRAMMES CHOISIE
+		MAJ_BDD
+
+	si etat avancement == Pret
+
+		LANCEMENT_DOSSIER_GOUV
+		LANCEMENT_DEMENAGEMENT
+		CONTACT_CLIENT
+		MAJ_BDD
+		MAJ_AGENDA
+		SAUVGARDE
+
+	sinon :
+
+		erreur BDD/client
 
 
-		OUVERTURE_BDD(client) --> dossier_BDD
 
-		si etat avancement == None :
-
-			erreur(OUVERTURE_BDD)
-
-		si etat avancement == Recherche :
-
-			INFO_LIEU(1) --> 4
-			RECHERCHE_APPARTEMENT(1,4) --> 5
-			RECHERCHE_INSTITU_CONCERNER --> 6 
-
-		si etat avancement == Organisation
-			
-			RECHERCHE_DEMENAGEUR
-			RECHERCHE_DATE_PLUS_TOT
-			CRATION_DOSSIER_GOUV
-			VALIDATION_CLIENT
-
-		si etat avancement == Pret
-
-			LANCEMENT_DOSSIER_GOUV
-			LANCEMENT_DEMENAGEMENT
-
-		sinon :
-
-			erreur BDD/client
+chaque fonction gère ses erreurs avec un systeme d'ouverture de ticket envoyer dans la partie ADMIN de l'app
