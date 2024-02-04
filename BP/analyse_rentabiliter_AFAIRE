@@ -1,3 +1,4 @@
+Plan 1 :
 Forfait 1 : Le client part simplement d'un point A à un point B et souhaite être accompagné pour la recherche d'appartement, l'organisation du déménagement, le déménagement lui-même, ainsi que la gestion administrative.
 
 Forfait 2 : Le client a déjà une idée d'appartement en tête, mais il souhaite de l'aide pour l'organisation du déménagement, la gestion administrative, etc.
@@ -28,3 +29,24 @@ demenagement :
 administration :
 
 	- prix fixé sur le temps de travail humain + temps serveur. 
+
+Plan 2 :
+Systeme de case a cocher avec un prix pour chaque offres
+
+categorie :
+
+Recherche : 
+	lieu 
+	logement 
+	parking 
+	travail
+
+Organisation : 
+	agenda
+	recherche des equipes 
+	contact exterieur
+
+Demenagement : 
+	administration :
+	demenagement :
+
