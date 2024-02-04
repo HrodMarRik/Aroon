@@ -1,53 +1,51 @@
 Plan 1 :
 
-Forfait 1 : Le client part simplement d'un point A à un point B et souhaite être accompagné pour la recherche d'appartement, l'organisation du déménagement, le déménagement lui-même, ainsi que la gestion administrative.
+	Forfait 1 : Le client part simplement d'un point A à un point B et souhaite être accompagné pour la recherche d'appartement, l'organisation du déménagement, le déménagement lui-même, ainsi que la gestion administrative.
 
-Forfait 2 : Le client a déjà une idée d'appartement en tête, mais il souhaite de l'aide pour l'organisation du déménagement, la gestion administrative, etc.
+	Forfait 2 : Le client a déjà une idée d'appartement en tête, mais il souhaite de l'aide pour l'organisation du déménagement, la gestion administrative, etc.
 
-Forfait 3 : Le client a déjà tout organisé, mais il souhaite simplement être assisté pour le déménagement.
-
-
-Forfait 1 : Prix du secteur agence immobilier + prix fixe pour l'orga + prix secteur demenageur + prix fixe de la gestion administrative - 10%
-Forfait 2 : Prix fixe pour l'orga + prix secteur demenageur + prix fixe de la gestion administrative -5%
-Forfait 3 : Prix secteur demenageur + prix fixe de la gestion administrative 
+	Forfait 3 : Le client a déjà tout organisé, mais il souhaite simplement être assisté pour le déménagement.
 
 
+	Forfait 1 : Prix du secteur agence immobilier + prix fixe pour l'orga + prix secteur demenageur + prix fixe de la gestion administrative - 10%
+	Forfait 2 : Prix fixe pour l'orga + prix secteur demenageur + prix fixe de la gestion administrative -5%
+	Forfait 3 : Prix secteur demenageur + prix fixe de la gestion administrative 
 
-offres : 
+	offres : 
 
-recherche appartement : 
+		recherche appartement : 
 
-	- accord avec agence immobilière --> prix/vente 
+			- accord avec agence immobilière --> prix/vente 
 
-organisation pré-demenagement : 
+		organisation pré-demenagement : 
 
-	- prix fixé sur le temps de travail humain + temps serveur.
+			- prix fixé sur le temps de travail humain + temps serveur.
 
-demenagement : 
+		demenagement : 
 
-	- accord avec demenageur --> prix/vente
+			- accord avec demenageur --> prix/vente
 
-administration :
+		administration :
 
-	- prix fixé sur le temps de travail humain + temps serveur. 
+			- prix fixé sur le temps de travail humain + temps serveur. 
 
 Plan 2 :
 
-Systeme de case a cocher avec un prix pour chaque offres
+	Systeme de case a cocher avec un prix pour chaque offres
 
-categorie :
+	categorie :
 
-	Recherche : 
-		logement : PRIX DEPENDANT DU MARCHÉ
-		parking : PRIX DEPENDANT DU MARCHÉ
-		travail : PRIX FIXE
+		Recherche : 
+			logement : PRIX DEPENDANT DU MARCHÉ
+			parking : PRIX DEPENDANT DU MARCHÉ
+			travail : PRIX FIXE
 
-	Organisation :
-		agenda : PRIX FIXE
-		recherche des equipes : PRIX DEPENDANT DU MARCHÉ
-		contact exterieur : je sais plus ce que je voulais mettre
+		Organisation :
+			agenda : PRIX FIXE
+			recherche des equipes : PRIX DEPENDANT DU MARCHÉ
+			contact exterieur : je sais plus ce que je voulais mettre
 
-	Demenagement :
-		administration : PRIX FIXE
-		demenagement : PRIX DEPENDANT DU MARCHÉ
+		Demenagement :
+			administration : PRIX FIXE
+			demenagement : PRIX DEPENDANT DU MARCHÉ
 
