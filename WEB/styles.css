@@ -13,6 +13,7 @@ body{
     height: 100vh;
     align-items: flex-start; /* Aligner le contenu à gauche */
     width: 20%;
+    position: fixed;
 }
 
 .menu_bouton {
@@ -38,6 +39,7 @@ body{
 
 
 .corp{
+    width: 80%;
     flex-grow: 1;
     background-color: #333;
     height: auto;
