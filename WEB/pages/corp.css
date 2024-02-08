@@ -17,11 +17,8 @@
 .corp_block{
 	flex: 1;
 	height: 16%;
+	width: 100%;
 	border: solid 1px;
-}
-
-.corp_block img{
-	width: 50%;
 }
 
 
