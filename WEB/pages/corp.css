@@ -1,0 +1,50 @@
+.corp{
+    padding-left: 20%;
+    flex-grow: 1;
+    min-height: 100vh;
+    width: 80%;
+    
+    background-color: #FFFEFF;
+    
+    color: #111;
+    flex-wrap: wrap;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.corp_block{
+	flex: 1;
+	height: 16%;
+	border: solid 1px;
+}
+
+.corp_block img{
+	width: 50%;
+}
+
+
+
+.corp_block_double{
+	flex: 2;
+	height: 32%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	border: solid 1px;
+}
+.corp_block_double_gauche{
+	flex: 1;
+	width: 50%;
+	height: 100%;
+	border: solid 1px;
+}
+.corp_block_double_droite{
+	flex: 1;
+	width: 50%;
+	height: 100%;
+	border: solid 1px;
+}
